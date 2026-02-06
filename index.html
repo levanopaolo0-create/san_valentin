@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Gianella 💖</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe0ec, #fff5f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+}
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 440px;
+}
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  margin: 10px;
+}
+#yes { background:#ff6fa5; color:white; }
+#no { background:#eee; position:absolute; }
+</style>
+</head>
+
+<body>
+<div class="card">
+<h1>Gianella Maily 💕</h1>
+<p>
+Hay personas que llegan despacio<br>
+y sin hacer ruido<br>
+se vuelven hogar.<br><br>
+Tú eres eso para mí.
+</p>
+
+<h2>¿Quieres ser mi San Valentín? 💖</h2>
+
+<button id="yes" onclick="abrir()">Sí 💕</button>
+<button id="no">No</button>
+</div>
+
+<script>
+document.getElementById("no").addEventListener("mouseover",()=>{
+  document.getElementById("no").style.left=Math.random()*300+"px";
+});
+function abrir(){
+  window.location.href="https://m.me/TU_USUARIO";
+}
+</script>
+</body>
+</html>
